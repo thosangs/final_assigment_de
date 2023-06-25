@@ -30,7 +30,7 @@ def scrape(ti) :
         driver.get('https://www.youtube.com/')
         #response=driver.find_element(By.CSS_SELECTOR,'.central-textlogo__image').text
         response=driver.current_url
-        pass    
+        pass
     ti.xcom_push(key='scrape_result',value=response)
     print('succes')
 
